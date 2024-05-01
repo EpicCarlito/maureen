@@ -1,18 +1,16 @@
 type Props = {
-  height: number;
-  stroke: number;
+  alwaysTall?: boolean;
+  alwaysShort?: boolean;
 };
 
 export default function Divider(props: Props) {
-  const heightStyle = {
-    height: `${props.height}rem`,
-    border: `${props.stroke}px solid black`,
-  };
-
-  return (
-    <div
-      style={heightStyle}
-      className="md:h-[calc(var(--height) + 1rem)]"
-    ></div>
-  );
+  let className = "";
+  if (props.alwaysTall == true) {
+    className = `border h-[6rem] w-[1px]`;
+  } else if (props.alwaysShort == true) {
+    className = `border-t h-[1px] w-full`;
+  } else {
+    className = `border-t md:border h-[1px] md:h-[6rem] w-full md:w-[1px]`;
+  }
+  return <div className={`${className} border-black`}></div>;
 }
