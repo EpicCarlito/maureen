@@ -3,6 +3,7 @@ import background from "../../public/background.gif";
 import profilePicture from "../../public/profilePicture.gif";
 import oranges from "../../public/oranges.gif";
 import Divider from "../components/divider";
+import NowPlaying from "../components/nowPlaying";
 
 export default function Home() {
   return (
@@ -61,6 +62,7 @@ export default function Home() {
           <Divider alwaysShort={true} />
         </div>
         <div className="flex flex-start gap-5 p-4 md:p-8">
+          <NowPlaying/>
           <Image
             src={oranges}
             alt={`yum, oranges!`}
