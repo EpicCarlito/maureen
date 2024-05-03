@@ -15,5 +15,5 @@ export default function Callback() {
     }
   }, []);
 
-  return <div>{code?? "processing..."}</div>;
+  return <div>{code ?? "processing..."}</div>;
 }
