@@ -1,2 +1,2 @@
 # Maureen
-A next.js website for a friend of mine, created to improve her [old carrd](https://okidokiartichoki.carrd.co/) and practice making websites in next.js. Uses spotify API to retrieve now playing information as well.
+A next.js website for a friend of mine, created to improve her [old carrd](https://okidokiartichoki.carrd.co/) and practice making websites in next.js. Uses HTTP requests to the spotify API to retrieve now playing information as well.

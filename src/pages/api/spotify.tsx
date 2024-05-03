@@ -67,7 +67,6 @@ async function getNowPlaying(accessToken: AccessToken) {
     return data;
   } catch (error) {
     console.error("Error parsing JSON:", error);
-    throw new Error("Failed to parse JSON response from Spotify API.");
   }
 }
 
