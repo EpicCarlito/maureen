@@ -8,17 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       fontFamily: {
-        'Unbounded': ['Unbounded', 'sans-serif'],
-        'TiltWarp': ['Unbounded', 'sans-serif'],
+        unbounded: ["var(--font-unbounded)"],
+        tilt_warp: ["var(--font-tilt_warp)"],
+        secular_one: ["var(--font-secular_one)"],
       },
     },
   },
   plugins: [],
 };
+
 export default config;

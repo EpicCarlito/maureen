@@ -1,13 +1,30 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Unbounded, Tilt_Warp, Secular_One } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "good luck!",
   description: "welcome!",
 };
+
+const unbounded = Unbounded({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-unbounded",
+});
+
+const tilt_warp = Tilt_Warp({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-tilt_warp",
+});
+
+const secular_one = Secular_One({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-secular_one",
+});
 
 export default function RootLayout({
   children,
@@ -16,17 +33,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Tilt+Warp&family=Unbounded:wght@200..900&display=swap"
-          rel="stylesheet"
-        ></link>
-      </head>
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${unbounded.variable} ${tilt_warp.variable} ${secular_one.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

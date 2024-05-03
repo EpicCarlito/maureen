@@ -16,58 +16,60 @@ export default function Home() {
         className="w-screen h-full border border-black"
       />
       <div className="absolute inset-0 m-8 md:m-16 bg-orange-400 rounded border border-orange-500">
-        <div className="flex flex-start justify-center items-center gap-5 mx-4 mt-4 md:mx-8 md:mt-8">
+        <div className="flex flex-start justify-center items-center mx-4 mt-4 md:mx-8 md:mt-8">
           <Image
             src={profilePicture}
             alt={`Profile Picture!`}
             unoptimized={true}
-            className="w-[5rem] md:w-[6rem] h-auto border border-black"
+            className="w-[5rem] md:w-[6rem] h-auto border border-black mr-[1rem]"
           />
           <Divider alwaysTall={true} />
-          <div className="flex flex-col text-center">
-            <h1 className="font-Unbounded text-2xl text-[#593000] font-bold">
+          <div className="flex flex-col text-center ml-[1rem]">
+            <h1 className="font-unbounded text-3xl text-[#7f5539] font-bold">
               maureen!
             </h1>
-            <p className="font-TiltWarp text-base">
+            <p className="font-tilt_warp text-base">
               Preferred names: Maureen, Moon
             </p>
-            <p className="font-TiltWarp text-base">any pronouns ! biromantic</p>
+            <p className="font-tilt_warp text-base">
+              any pronouns ! biromantic
+            </p>
           </div>
         </div>
-        <div className="flex flex-start flex-col md:flex-row gap-1 sm:gap-3 mx-4 mt-2 md:mx-8 md:mt-4">
-          <p className="text-sm">
-            <b className="text-md">likes (media): </b>mp100, loz, buck-tick,
+        <div className="flex flex-start flex-col md:flex-row font-secular_one mx-4 my-2 md:mx-8 md:my-4">
+          <p className="text-md md:mr-[1rem] mb-[0.5rem] md:mb-0">
+            <b className="text-large">likes (media): </b>mp100, loz, buck-tick,
             duran duran, coma cinema, object shows, jjba, bloons td, 100% orange
             juice, pokemon, mhrise, dollars trilogy, mahito, and papa louie
             games!
           </p>
           <Divider />
-          <p className="text-sm">
-            <b className="text-md">likes (general): </b>my friends, cool
+          <p className="text-md md:mx-[1rem] my-[0.5rem] md:my-0">
+            <b className="text-large">likes (general): </b>my friends, cool
             fashion, art, trains, oranges, broccoli, cheesecake, birds, sharks,
             cowboys, snow leopards and more &lt;:
           </p>
           <Divider />
-          <p className="text-sm">
-            <b className="text-md">LOVE: </b>younger bro, and older bro !!
+          <p className="text-md md:mx-[1rem] my-[0.5rem] md:my-0">
+            <b className="text-large">LOVE: </b>younger bro, and older bro !!
           </p>
           <Divider />
-          <p className="text-sm">
-            <b className="text-md">dislikes: </b> petty people, tests on friday,
-            math, pickles, perverted people (i dont really genuinely hate any
-            human being tbh!)
+          <p className="text-md md:ml-[1rem] mt-[0.5rem] md:mt-0">
+            <b className="text-large">dislikes: </b> petty people, tests on
+            friday, math, pickles, perverted people (i dont really genuinely
+            hate any human being tbh!)
           </p>
         </div>
-        <div className="mx-4 mt-2 md:mx-8 md:mt-4">
+        <div className="mx-4 md:mx-8">
           <Divider alwaysShort={true} />
         </div>
-        <div className="flex flex-start gap-5 p-4 md:p-8">
-          <NowPlaying/>
+        <div className="flex mx-4 mt-2 md:mx-8">
+          <NowPlaying />
           <Image
             src={oranges}
             alt={`yum, oranges!`}
             unoptimized={true}
-            className="w-[5rem] md:w-[6rem] h-auto"
+            className="ml-[0.5rem] w-[5rem] md:w-[6rem] h-auto"
           />
         </div>
       </div>
