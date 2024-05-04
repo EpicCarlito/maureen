@@ -40,7 +40,7 @@ export default function Home() {
           <p className="text-md md:mr-[1rem] mb-[0.5rem] md:mb-0">
             <b className="text-large">likes (media): </b>mp100, loz, buck-tick,
             duran duran, coma cinema, object shows, jjba, bloons td, 100% orange
-            juice, pokemon, mhrise, dollars trilogy, mahito, and papa louie
+            juice, pokemon, mhrise, dollars trilogy, jjk, and papa louie
             games!
           </p>
           <Divider />
