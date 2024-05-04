@@ -4,6 +4,7 @@ import profilePicture from "../../public/profilePicture.gif";
 import oranges from "../../public/oranges.gif";
 import Divider from "../components/divider";
 import NowPlaying from "../components/nowPlaying";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -40,8 +41,7 @@ export default function Home() {
           <p className="text-md md:mr-[1rem] mb-[0.5rem] md:mb-0">
             <b className="text-large">likes (media): </b>mp100, loz, buck-tick,
             duran duran, coma cinema, object shows, jjba, bloons td, 100% orange
-            juice, pokemon, mhrise, dollars trilogy, jjk, and papa louie
-            games!
+            juice, pokemon, mhrise, dollars trilogy, jjk, and papa louie games!
           </p>
           <Divider />
           <p className="text-md md:mx-[1rem] my-[0.5rem] md:my-0">
@@ -72,6 +72,21 @@ export default function Home() {
             className="ml-[0.5rem] w-[5rem] md:w-[6rem] h-auto"
           />
         </div>
+        <p className="text-xs ml-4 absolute bottom-[1rem]">
+          Made by{" "}
+          <Link href="https://epiccarlito.vercel.app/" className="underline">
+            EpicCarlito
+          </Link>
+          {". "}
+          Source in{" "}
+          <Link
+            href="https://github.com/EpicCarlito/maureen"
+            className="underline"
+          >
+            Github
+          </Link>
+          {"!"}
+        </p>
       </div>
     </div>
   );
