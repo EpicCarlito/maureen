@@ -17,7 +17,7 @@ export default function Home() {
         priority={true}
         className="w-screen h-full border border-black"
       />
-      <div className="absolute inset-0 m-4 md:m-12 bg-orange-400 rounded border border-orange-500">
+      <div className="absolute inset-0 opacity-95 m-4 md:m-12 bg-orange-400 rounded border border-orange-500">
         <ProfileCard />
         <AboutMe />
         <div className="mx-4 md:mx-8">
