@@ -28,17 +28,17 @@ export default function NowPlaying() {
           <Image
             src={spotifyLogo}
             alt={`music platform`}
-            className="h-[1.5rem] w-auto mr-[0.5rem]"
+            className="h-[1.25rem] md:h-[1.5rem] w-auto mr-[0.5rem]"
           />
         </Link>
         <Link href="https://open.spotify.com/user/31iyd3ibo5i53uaic62rcehjpsbu">
-          <p className="font-bold justify-center">Now Playing:</p>
+          <p className="text-sm md:text-md font-bold justify-center">Listening to...</p>
         </Link>
       </div>
       <div className="border border-black rounded">
         <div className="p-2">
           {isLoading ? (
-            <div>Loading...</div>
+            <div>Finding songs...</div>
           ) : nowPlaying ? (
             <div>
               {nowPlaying.is_playing != null && song ? (
@@ -56,11 +56,11 @@ export default function NowPlaying() {
                   </div>
                 </a>
               ) : (
-                <div>Not playing anything.</div>
+                <div>Nothing. :(</div>
               )}
             </div>
           ) : (
-            <div>Not playing anything.</div>
+            <div>Nothing. :(</div>
           )}
         </div>
       </div>
