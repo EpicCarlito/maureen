@@ -10,8 +10,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         unbounded: ["var(--font-unbounded)"],
-        tilt_warp: ["var(--font-tilt_warp)"],
-        secular_one: ["var(--font-secular_one)"],
+        tilt_warp: ["var(--font-tilt-warp)"],
+        secular_one: ["var(--font-secular-one)"],
       },
     },
   },

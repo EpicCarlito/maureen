@@ -11,14 +11,15 @@ const unbounded = Unbounded({
 const tilt_warp = Tilt_Warp({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-tilt_warp",
+  adjustFontFallback: false,
+  variable: "--font-tilt-warp",
 });
 
 const secular_one = Secular_One({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-secular_one",
+  variable: "--font-secular-one",
 });
 
 export const metadata: Metadata = {
@@ -41,12 +42,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${unbounded.variable} ${tilt_warp.variable} ${secular_one.variable}`}
-      >
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${unbounded.variable} ${tilt_warp.variable} ${secular_one.variable}`}
+    >
+      <body>{children}</body>
     </html>
   );
 }

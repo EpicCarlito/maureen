@@ -1,7 +1,16 @@
 import Divider from "../../components/divider";
-import Media from "../../components/media";
+import dynamic from "next/dynamic";
+import { useMemo } from "react";
 
 export default function AboutMe() {
+  const Media = useMemo(
+    () =>
+      dynamic(() => import("../../components/media"), {
+        ssr: false,
+      }),
+    []
+  );
+  
   return (
     <div className="flex flex-start flex-col font-secular_one mt-1 md:mt-0">
       <Media />
