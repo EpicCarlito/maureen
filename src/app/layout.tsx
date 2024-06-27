@@ -1,11 +1,6 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Unbounded, Tilt_Warp, Secular_One } from "next/font/google";
 import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "good luck!",
-  description: "welcome!",
-};
 
 const unbounded = Unbounded({
   subsets: ["latin"],
@@ -25,6 +20,20 @@ const secular_one = Secular_One({
   display: "swap",
   variable: "--font-secular_one",
 });
+
+export const metadata: Metadata = {
+  title: "good luck!",
+  description: "Maureen's website!",
+  openGraph: {
+    url: "https://maureen-rawr.vercel.app/",
+    title: "good luck!",
+    description: "Maureen's website!",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#fdba74",
+};
 
 export default function RootLayout({
   children,
