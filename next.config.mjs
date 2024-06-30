@@ -4,6 +4,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "i.scdn.co",
+        port: "",
+      },
+      {
+        protocol: "https",
         hostname: "file.garden",
         port: "",
       },
